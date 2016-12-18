@@ -26,6 +26,6 @@ public class AIMovementController : MonoBehaviour
 
 	public void StopMovement()
 	{
-		agent.Stop(true);
+		agent.ResetPath();
 	}
 }
