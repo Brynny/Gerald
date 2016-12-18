@@ -36,7 +36,7 @@ public class BulletController : MonoBehaviour
 		bullet.velocity = transform.forward * moveSpeed;
 	}
 
-	void OntriggerEnter(Collider other)
+	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject) 
 		{
