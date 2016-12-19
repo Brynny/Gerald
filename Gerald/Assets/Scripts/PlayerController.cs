@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 
 	public float moveSpeed = 6f;
 	public float rotationSpeed = 30f;
+	public float gravity = 200f;
 	private Vector3 moveDirection = Vector3.zero;
 
 	void Start ()
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 		moveDirection = new Vector3 (0, 0, Input.GetAxis("Vertical"));
 		moveDirection = transform.TransformDirection(moveDirection);
 		moveDirection *= moveSpeed;
+
+		moveDirection.y -= gravity * Time.deltaTime;
 
 		transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime));
 

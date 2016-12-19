@@ -38,7 +38,7 @@ public class BulletController : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject) 
+		if (other.gameObject.tag =="Enemy") 
 		{
 			Debug.Log("Collider with "+other.gameObject.name);
 			Destroy (this.gameObject);
