@@ -4,6 +4,8 @@ using System.Collections;
 public class AIMovementController : MonoBehaviour
 {
 	public Transform target;
+	float damage;
+	public GameObject Wolf;
 
 	private NavMeshAgent agent;
 
@@ -27,5 +29,13 @@ public class AIMovementController : MonoBehaviour
 	public void StopMovement()
 	{
 		agent.ResetPath();
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.gameObject.tag == "Bullet")
+		{
+			Destroy (other.gameObject);
+		}
 	}
 }

@@ -1,14 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapons\BulletController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AIMovementController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Weapons\Ak47Controller.cs" Line="1" Column="1" />
-      <File FileName="..\..\Mini Mech Game\Assets\Scripts\Player\PlayerAttacks\PlayerMiniGunAttackController.cs" Line="1" Column="1" />
-      <File FileName="..\..\Mini Mech Game\Assets\Scripts\Player\PlayerAttacks\MiniGunBulletController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Weapons\BulletController.cs" Line="41" Column="36" />
-      <File FileName="Assets\Scripts\AIMovementController.cs" Line="29" Column="19" />
-      <File FileName="Assets\Scripts\AIAlertController.cs" Line="28" Column="39" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="9" Column="28" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="34" Column="51" />
+      <File FileName="Assets\Scripts\Player\playerController.cs" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\AIMovementController.cs" Line="39" Column="4" />
+      <File FileName="Assets\Scripts\AIAlertController.cs" Line="33" Column="2" />
+      <File FileName="Assets\Scripts\Weapons\BulletController.cs" Line="37" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

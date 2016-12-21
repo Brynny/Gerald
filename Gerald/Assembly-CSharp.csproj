@@ -47,7 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AIAlertController.cs" />
      <Compile Include="Assets\Scripts\AIMovementController.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Weapons\Ak47Controller.cs" />
      <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
  <Reference Include="UnityEngine.UI">

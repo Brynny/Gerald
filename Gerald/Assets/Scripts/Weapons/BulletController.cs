@@ -35,14 +35,4 @@ public class BulletController : MonoBehaviour
 		//Give bullet movement to move in a forward direction.
 		bullet.velocity = transform.forward * moveSpeed;
 	}
-
-	void OnTriggerEnter(Collider other)
-	{
-		if (other.gameObject.tag =="Enemy") 
-		{
-			Debug.Log("Collider with "+other.gameObject.name);
-			Destroy (this.gameObject);
-
-		}
-	}
 }
