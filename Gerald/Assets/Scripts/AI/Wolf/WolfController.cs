@@ -20,7 +20,7 @@ public class WolfController : MonoBehaviour
 		if(other.gameObject.tag == "Bullet")
 		{
 			Destroy (other.gameObject);
-			wolfHealth = wolfHealth - 5f;
+			wolfHealth = wolfHealth - 2f;
 		}
 	}
 
