@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class playerController : MonoBehaviour 
 {
 
-	public float currentPlayerHealth = 100f;
+	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
 
 	float calcHealth;
@@ -16,14 +16,13 @@ public class playerController : MonoBehaviour
 
 	void Start () 
 	{
-	
+		currentPlayerHealth = maxPlayerHealth;
 	}
-	
+
 
 	void FixedUpdate () 
 	{		
 		PlayerHP();
-		SetHealthBar(calcHealth);
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -35,11 +34,10 @@ public class playerController : MonoBehaviour
 		}
 	}
 
-	void PlayerHP()
+	void PlayerHP ()
 	{
-		calcHealth = currentPlayerHealth - maxPlayerHealth;
-		//Make Player Health A percentage
-		healthPercentage = (currentPlayerHealth / maxPlayerHealth) * 100f; 
+		calcHealth = currentPlayerHealth / maxPlayerHealth;
+		SetHealthBar(calcHealth);
 	}
 
 	//Display Health on bar
