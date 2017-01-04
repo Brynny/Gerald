@@ -45,8 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AIAlertController.cs" />
-     <Compile Include="Assets\Scripts\AIMovementController.cs" />
+     <Compile Include="Assets\Scripts\AI\Wolf\AIAlertController.cs" />
+     <Compile Include="Assets\Scripts\AI\Wolf\AIMovementController.cs" />
+     <Compile Include="Assets\Scripts\AI\Wolf\WolfController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Weapons\Ak47Controller.cs" />
