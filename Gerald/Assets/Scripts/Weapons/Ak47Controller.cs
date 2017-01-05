@@ -30,7 +30,7 @@ public class Ak47Controller : MonoBehaviour
 	{
 		timer = timer - Time.deltaTime;
 
-		if (Input.GetMouseButton (0) && timer <= 0)
+		if (Input.GetMouseButton (0) && timer <= 0 && currentAmmo > 0f)
 		{
 			bulletInstance = Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation) as Rigidbody;
 			currentAmmo = currentAmmo - 1f;
@@ -46,5 +46,8 @@ public class Ak47Controller : MonoBehaviour
 		//If Ammo is more than 50, limit it to 50.
 		if (currentAmmo >= 50f)
 			currentAmmo = 50f;
+
+		if (currentAmmo <= 0f)
+			currentAmmo = 0;
 	}
 }
