@@ -14,6 +14,7 @@ public class playerController : MonoBehaviour
 	float healthPercentage;
 
 	public Image healthBar;
+	public Text healthText;
 
 	void Start () 
 	{
@@ -29,14 +30,20 @@ public class playerController : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		//If The Player Is Attacked By The Wolf, DO Damage
-		if(other.gameObject.tag == "Wolf")
+		if (other.gameObject.tag == "Wolf")
 		{
 			currentPlayerHealth = currentPlayerHealth - 10f;
 		}
 
-		if(other.gameObject.tag == "BulletPack")
+		if (other.gameObject.tag == "BulletPack")
 		{
 			Gun.GetComponent<Ak47Controller>().BulletPackPickup();
+			Destroy (other.gameObject);
+		}
+
+		if (other.gameObject.tag == "HealthPack")
+		{
+			currentPlayerHealth += 10f;
 			Destroy (other.gameObject);
 		}
 	}
@@ -45,6 +52,9 @@ public class playerController : MonoBehaviour
 	{
 		calcHealth = currentPlayerHealth / maxPlayerHealth;
 		SetHealthBar(calcHealth);
+
+		float healthPercentage= currentPlayerHealth / maxPlayerHealth * 100f;
+		healthText.text = healthPercentage + "%";
 	}
 
 	//Display Health on bar
