@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour 
 {
+	public GameObject player;
 
 	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
@@ -31,6 +32,12 @@ public class playerController : MonoBehaviour
 		if(other.gameObject.tag == "Wolf")
 		{
 			currentPlayerHealth = currentPlayerHealth - 10f;
+		}
+
+		if(other.gameObject.tag == "BulletPack")
+		{
+			player.GetComponent<Ak47Controller>().BulletPackPickup();
+			Destroy (other.gameObject);
 		}
 	}
 

@@ -38,6 +38,11 @@ public class Ak47Controller : MonoBehaviour
 		}
 	}
 
+	public void BulletPackPickup()
+	{
+		currentAmmo += 10f;
+	}
+
 	void GunAmmo()
 	{
 		//Display Ammo Text On UI

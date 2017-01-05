@@ -10,8 +10,6 @@ public class updatedMovementController : MonoBehaviour
 	private Vector3 moveInput;
 	private Vector3 moveVelocity;
 
-	public Terrain terrain;
-
 	private Camera mainCamera;
 
 
