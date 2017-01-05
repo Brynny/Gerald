@@ -3,7 +3,13 @@ using System.Collections;
 
 public class WolfController : MonoBehaviour 
 {
+	//Wolf Health
 	public float wolfHealth = 10f;
+
+	//Spawn Ammo
+	public GameObject Loot;
+
+	float dropRate = 0.25f;
 
 	void Start () 
 	{
@@ -28,6 +34,10 @@ public class WolfController : MonoBehaviour
 	{
 		if (wolfHealth <= 0)
 		{
+			if (Random.Range(0f, 1f) <= dropRate)
+			{
+			Instantiate (Loot, transform.position, Quaternion.identity);
+			}
 			Destroy (this.gameObject);
 		}
 	}
