@@ -10,14 +10,14 @@ public class Ak47Controller : MonoBehaviour
 	public Transform AssaultRifleGun;
 	float timer = 0.25f;
 
-	public float currentAmmo = 50f;
-	public float maxAmmo = 50f;
+	public float currentAmmo = 0f;
+	public float maxAmmo = 100f;
 
 	public Text ammoText;
 
 	void Start () 
 	{
-	
+		currentAmmo = maxAmmo;
 	}
 
 	void FixedUpdate () 
@@ -40,7 +40,7 @@ public class Ak47Controller : MonoBehaviour
 
 	public void BulletPackPickup()
 	{
-		currentAmmo += 10f;
+		currentAmmo += 20f;
 	}
 
 	void GunAmmo()
@@ -49,8 +49,8 @@ public class Ak47Controller : MonoBehaviour
 		ammoText.text = "Ammo: " + currentAmmo + " / " + maxAmmo;
 
 		//If Ammo is more than 50, limit it to 50.
-		if (currentAmmo >= 50f)
-			currentAmmo = 50f;
+		if (currentAmmo >= 100f)
+			currentAmmo = 100f;
 
 		if (currentAmmo <= 0f)
 			currentAmmo = 0;
