@@ -9,7 +9,7 @@ public class WolfController : MonoBehaviour
 	//Spawn Ammo
 	public GameObject[] Loot;
 
-	float dropRate = 1f;
+	float dropRate = 0.5f;
 
 	void Start () 
 	{

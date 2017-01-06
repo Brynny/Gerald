@@ -55,6 +55,9 @@ public class playerController : MonoBehaviour
 
 		float healthPercentage= currentPlayerHealth / maxPlayerHealth * 100f;
 		healthText.text = healthPercentage + "%";
+
+		if (currentPlayerHealth >= maxPlayerHealth)
+			currentPlayerHealth = maxPlayerHealth;
 	}
 
 	//Display Health on bar
