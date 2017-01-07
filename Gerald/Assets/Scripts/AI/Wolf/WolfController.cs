@@ -8,6 +8,7 @@ public class WolfController : MonoBehaviour
 
 	//Spawn Ammo
 	public GameObject[] Loot;
+	public GameObject wolfBlood;
 
 	float dropRate = 0.5f;
 
@@ -27,6 +28,7 @@ public class WolfController : MonoBehaviour
 		{
 			Destroy (other.gameObject);
 			wolfHealth = wolfHealth - 2f;
+			Instantiate (wolfBlood, transform.position, transform.rotation);
 		}
 	}
 
