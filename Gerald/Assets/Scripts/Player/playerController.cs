@@ -29,18 +29,27 @@ public class playerController : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		//If The Player Is Attacked By The Wolf, DO Damage
+		//AI
+		//If The Player Is Attacked By The Wolf, Do Damage
 		if (other.gameObject.tag == "Wolf")
 		{
 			currentPlayerHealth = currentPlayerHealth - 10f;
 		}
 
+		//If The Player Is Attacked By The Boss Wolf, Do Damage
+		if (other.gameObject.tag == "BossWolf")
+		{
+			currentPlayerHealth = currentPlayerHealth - 20f;
+		}
+
+		//Pick Up Ammo Pack when walked over
 		if (other.gameObject.tag == "BulletPack")
 		{
 			Gun.GetComponent<Ak47Controller>().BulletPackPickup();
 			Destroy (other.gameObject);
 		}
 
+		//Pick Up Health Pack when walked over
 		if (other.gameObject.tag == "HealthPack")
 		{
 			currentPlayerHealth += 10f;
