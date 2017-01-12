@@ -9,6 +9,7 @@ public class WolfController : MonoBehaviour
 	//Spawn Ammo
 	public GameObject[] Loot;
 	public GameObject wolfBlood;
+	public GameObject gameController;
 
 	float dropRate = 0.5f;
 
@@ -40,6 +41,7 @@ public class WolfController : MonoBehaviour
 			{
 				Instantiate (Loot[Random.Range(0, 2)], transform.position, Quaternion.identity);
 			}
+			gameController.GetComponent<GameController>().EnemyCount();
 			Destroy (this.gameObject);
 		}
 	}

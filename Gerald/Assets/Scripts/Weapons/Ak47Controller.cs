@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Ak47Controller : MonoBehaviour 
 {
+	public GameObject explosion;
 
 	public Rigidbody bulletPrefab;
 	Rigidbody bulletInstance;
@@ -32,6 +33,7 @@ public class Ak47Controller : MonoBehaviour
 
 		if (Input.GetMouseButton (0) && timer <= 0 && currentAmmo > 0f)
 		{
+			Instantiate (explosion, AssaultRifleGun.position, AssaultRifleGun.rotation);
 			bulletInstance = Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation) as Rigidbody;
 			currentAmmo = currentAmmo - 1f;
 			timer = 0.25f;

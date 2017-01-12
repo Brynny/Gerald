@@ -51,11 +51,13 @@
      <Compile Include="Assets\Scripts\AI\Wolf\WolfBloodController.cs" />
      <Compile Include="Assets\Scripts\AI\Wolf\WolfController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Player\updatedMovementController.cs" />
      <Compile Include="Assets\Scripts\Weapons\Ak47Controller.cs" />
      <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\explosionController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
