@@ -6,11 +6,12 @@ public class WolfController : MonoBehaviour
 	//Wolf Health
 	public float wolfHealth = 10f;
 
-	//Spawn Ammo
-	public GameObject[] Loot;
+
 	public GameObject wolfBlood;
 	public GameObject gameController;
 
+	//Spawn Ammo
+	public GameObject[] Loot;
 	float dropRate = 0.5f;
 
 	void Start () 

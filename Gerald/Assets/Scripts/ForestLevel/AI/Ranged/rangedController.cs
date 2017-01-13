@@ -11,6 +11,8 @@ public class rangedController : MonoBehaviour
 
 	float timer = 0.25f;
 
+
+
 	public void Shoot()
 	{
 		timer = timer - Time.deltaTime;
