@@ -4,7 +4,6 @@ using System.Collections;
 public class AIMovementController : MonoBehaviour
 {
 	public Transform target;
-	float damage;
 	public GameObject Wolf;
 
 	private NavMeshAgent agent;

@@ -45,12 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AI\Wolf\AIAlertController.cs" />
-     <Compile Include="Assets\Scripts\AI\Wolf\AIMovementController.cs" />
-     <Compile Include="Assets\Scripts\AI\Wolf\BossWolfController.cs" />
-     <Compile Include="Assets\Scripts\AI\Wolf\WolfBloodController.cs" />
-     <Compile Include="Assets\Scripts\AI\Wolf\WolfController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedAlertController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedMovementController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\shootDistanceController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\stopMovementTrigger.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\AIAlertController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\AIMovementController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\BossWolfController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfBloodController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />

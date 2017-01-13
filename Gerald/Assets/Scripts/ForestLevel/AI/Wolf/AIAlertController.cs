@@ -4,16 +4,6 @@ using System.Collections;
 public class AIAlertController : MonoBehaviour
 {
 	public GameObject Ai;
-	void Start () 
-	{
-	
-	}
-	
-
-	void Update ()
-	{
-	
-	}
 
 	void OnTriggerStay(Collider other)
 	{

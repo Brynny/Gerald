@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ForestLevel\AI\Ranged\rangedAlertController.cs">
     <Files>
-      <File FileName="Assets\Scripts\AI\Wolf\WolfBloodController.cs" Line="5" Column="2" />
-      <File FileName="Assets\Scripts\Weapons\explosionController.cs" Line="8" Column="34" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="13" Column="15" />
-      <File FileName="Assets\Scripts\Weapons\Ak47Controller.cs" Line="38" Column="35" />
-      <File FileName="Assets\Scripts\AI\Wolf\WolfController.cs" Line="44" Column="63" />
+      <File FileName="Assets\Scripts\ForestLevel\AI\Ranged\rangedMovementController.cs" Line="22" Column="28" />
+      <File FileName="Assets\Scripts\ForestLevel\AI\Ranged\rangedAlertController.cs" Line="21" Column="50" />
+      <File FileName="Assets\Scripts\ForestLevel\AI\Ranged\shootDistanceController.cs" Line="6" Column="27" />
+      <File FileName="Assets\Scripts\ForestLevel\AI\Ranged\rangedController.cs" Line="23" Column="3" />
+      <File FileName="Assets\Scripts\ForestLevel\AI\Ranged\stopMovementTrigger.cs" Line="24" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
