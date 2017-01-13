@@ -16,7 +16,10 @@ public class rangedMovementController : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-
+		if (target != null)
+		{
+			transform.LookAt(target);
+		}
 	}
 
 	public void MoveToPlayer()
