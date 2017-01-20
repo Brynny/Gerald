@@ -4,6 +4,7 @@ using System.Collections;
 public class shootDistanceController : MonoBehaviour
 {
 	public GameObject weapon;
+	public GameObject RangedAI;
 	void Start () 
 	{
 
@@ -19,6 +20,7 @@ public class shootDistanceController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
+			RangedAI.GetComponent<rangedMovementController>().LootAtPlayer();
 			weapon.GetComponent<rangedController>().Shoot();
 		}
 	}

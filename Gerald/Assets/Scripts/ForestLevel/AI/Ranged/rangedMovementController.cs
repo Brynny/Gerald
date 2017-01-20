@@ -24,11 +24,6 @@ public class rangedMovementController : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		if (target != null)
-		{
-			transform.LookAt(target);
-		}
-
 		RangedDeath();
 	}
 
@@ -62,6 +57,14 @@ public class rangedMovementController : MonoBehaviour
 			}
 			gameController.GetComponent<GameController>().EnemyCount();
 			Destroy (this.gameObject);
+		}
+	}
+
+	public void LootAtPlayer()
+	{
+		if (target != null)
+		{
+			transform.LookAt(target);
 		}
 	}
 }
