@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour 
 {
 	public Text enemiesRemainingText;
-	public float enemiesRemaining = 19f;
+	public float enemiesKilled = 0f;
 		
 
 	void FixedUpdate ()
@@ -15,11 +15,11 @@ public class GameController : MonoBehaviour
 
 	void UIDisplay()
 	{
-		enemiesRemainingText.text = "Enemies Remaining: " + enemiesRemaining;
+		enemiesRemainingText.text = "Enemy Counter: " + enemiesKilled;
 	}
 
 	public void EnemyCount()
 	{
-		enemiesRemaining -= 1f;
+		enemiesKilled += 1f;
 	}
 }
