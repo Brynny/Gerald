@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Ak47Controller : MonoBehaviour 
+public class AssaultRifleController : MonoBehaviour 
 {
 	public GameObject explosion;
 

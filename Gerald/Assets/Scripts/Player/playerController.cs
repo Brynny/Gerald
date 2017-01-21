@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour 
 {
-	public GameObject Gun;
+	public GameObject AssaultRifle;
 
 	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
@@ -45,7 +45,7 @@ public class playerController : MonoBehaviour
 		//Pick Up Ammo Pack when walked over
 		if (other.gameObject.tag == "BulletPack")
 		{
-			Gun.GetComponent<Ak47Controller>().BulletPackPickup();
+			AssaultRifle.GetComponent<AssaultRifleController>().BulletPackPickup();
 			Destroy (other.gameObject);
 		}
 
