@@ -5,21 +5,28 @@ using UnityEngine.UI;
 public class WeaponSwapController : MonoBehaviour
 {
 	public GameObject AssaultRifle;
-	public GameObject GunTwo;
+	public GameObject PlasmaGun;
 	public Text currentWeapon;
+
+	public bool PlasmaGunEquipped = false;
 
 
 	void Start () 
 	{
 		AssaultRifle.SetActive(true);
-		GunTwo.SetActive(false);
+		PlasmaGun.SetActive(false);
 		currentWeapon.text = "Assault Rifle";
 	}
 	
 
-	void FixedUpdate () 
+	void Update () 
 	{
 		WeaponSwitch();
+	}
+
+	public void PlasmaGunPickedUp()
+	{
+		PlasmaGunEquipped = true;
 	}
 
 	void WeaponSwitch()
@@ -27,14 +34,14 @@ public class WeaponSwapController : MonoBehaviour
 		if (Input.GetKeyDown("1"))
 		{
 			AssaultRifle.SetActive(true);
-			GunTwo.SetActive(false);
+			PlasmaGun.SetActive(false);
 			currentWeapon.text = "Assault Rifle";
 		}
 
-		if (Input.GetKeyDown("2"))
+		if (Input.GetKeyDown("2") && PlasmaGunEquipped == true)
 		{
 			AssaultRifle.SetActive(false);
-			GunTwo.SetActive(true);
+			PlasmaGun.SetActive(true);
 			currentWeapon.text = "Plasma Gun";
 		}
 

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class playerController : MonoBehaviour 
 {
 	public GameObject AssaultRifle;
+	public GameObject weaponSlot;
 
 	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
@@ -15,6 +16,8 @@ public class playerController : MonoBehaviour
 
 	public Image healthBar;
 	public Text healthText;
+
+	public Text plasmaGunPickedUpText;
 
 	void Start () 
 	{
@@ -55,6 +58,14 @@ public class playerController : MonoBehaviour
 			currentPlayerHealth += 10f;
 			Destroy (other.gameObject);
 		}
+
+		if (other.gameObject.tag == "PlasmaGun")
+		{
+			weaponSlot.GetComponent<WeaponSwapController>().PlasmaGunPickedUp();
+			Destroy (other.gameObject);
+			plasmaGunPickedUpText.text = "PlasmaGun Equipped";
+		}
+
 	}
 
 	void PlayerHP ()
