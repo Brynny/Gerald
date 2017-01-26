@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\SnakeVenomController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedAlertController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedMovementController.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Player\updatedMovementController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\AmmoController.cs" />
      <Compile Include="Assets\Scripts\Weapons\AssaultRifleController.cs" />
      <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponSwapController.cs" />

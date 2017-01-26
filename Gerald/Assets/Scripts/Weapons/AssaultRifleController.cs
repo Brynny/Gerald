@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class AssaultRifleController : MonoBehaviour 
 {
+	public GameObject AmmoController;
+
 	public GameObject explosion;
 
 	public Rigidbody bulletPrefab;
@@ -11,50 +13,22 @@ public class AssaultRifleController : MonoBehaviour
 	public Transform AssaultRifleGun;
 	float timer = 0.25f;
 
-	public float currentAmmo = 200f;
-	public float maxAmmo = 200f;
-
-	public Text ammoText;
-
-	void Start () 
-	{
-		currentAmmo = maxAmmo;
-	}
-
 	void FixedUpdate () 
 	{
 		Shoot();
-		GunAmmo();
+		AmmoController.GetComponent<AmmoController>().ARAmmoController();
 	}
 
 	void Shoot ()
 	{
 		timer = timer - Time.deltaTime;
 
-		if (Input.GetMouseButton (0) && timer <= 0 && currentAmmo > 0f)
+		if (Input.GetMouseButton (0) && timer <= 0 && AmmoController.GetComponent<AmmoController>().ARCurrentAmmo > 0)
 		{
 			Instantiate (explosion, AssaultRifleGun.position, AssaultRifleGun.rotation);
 			bulletInstance = Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation) as Rigidbody;
-			currentAmmo = currentAmmo - 1f;
+			AmmoController.GetComponent<AmmoController>().ARAmmoDecrease();
 			timer = 0.25f;
 		}
-	}
-
-	public void BulletPackPickup()
-	{
-		currentAmmo += 20f;
-	}
-
-	void GunAmmo()
-	{
-		//Display Ammo Text On UI
-		ammoText.text = "Ammo: " + currentAmmo + " / " + maxAmmo;
-
-		//If Ammo is more than 50, limit it to 50.
-		if (currentAmmo >= 200f)
-			currentAmmo = 200f;
-
-		if (currentAmmo <= 0f)
-			currentAmmo = 0;
 	}
 }

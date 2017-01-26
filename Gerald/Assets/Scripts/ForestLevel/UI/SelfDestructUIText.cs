@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SelfDestructUIText : MonoBehaviour 
 {
-	void FixedUpdate()
+	public void SelfDestruct()
 	{
 		Object.Destroy(gameObject, 3f);
 	}

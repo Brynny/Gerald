@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour
 {
 	public GameObject AssaultRifle;
 	public GameObject weaponSlot;
+	public GameObject PlasmaGunPickUpTextGO;
 
 	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
@@ -45,10 +46,16 @@ public class playerController : MonoBehaviour
 			currentPlayerHealth = currentPlayerHealth - 20f;
 		}
 
+		//If The Player Is Hit By Snake Venom, Do Damage
+		if (other.gameObject.tag == "SnakeVenom")
+		{
+			currentPlayerHealth = currentPlayerHealth - 15f;
+		}
+
 		//Pick Up Ammo Pack when walked over
 		if (other.gameObject.tag == "BulletPack")
 		{
-			AssaultRifle.GetComponent<AssaultRifleController>().BulletPackPickup();
+			AssaultRifle.GetComponent<AmmoController>().BulletPackPickup();
 			Destroy (other.gameObject);
 		}
 
@@ -64,6 +71,8 @@ public class playerController : MonoBehaviour
 			weaponSlot.GetComponent<WeaponSwapController>().PlasmaGunPickedUp();
 			Destroy (other.gameObject);
 			plasmaGunPickedUpText.text = "PlasmaGun Equipped";
+			PlasmaGunPickUpTextGO.GetComponent<SelfDestructUIText>().SelfDestruct();
+
 		}
 
 	}

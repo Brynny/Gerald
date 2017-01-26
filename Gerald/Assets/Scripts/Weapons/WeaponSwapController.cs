@@ -29,7 +29,7 @@ public class WeaponSwapController : MonoBehaviour
 		PlasmaGunEquipped = true;
 	}
 
-	void WeaponSwitch()
+	public void WeaponSwitch()
 	{
 		if (Input.GetKeyDown("1"))
 		{
