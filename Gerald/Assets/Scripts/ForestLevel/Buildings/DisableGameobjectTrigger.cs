@@ -9,7 +9,6 @@ public class DisableGameobjectTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			Debug.Log("HIT TRIGGER");
 			disabledGameobject.GetComponent<DisableGameobject>().DisableObject();
 		}
 	}
@@ -18,7 +17,6 @@ public class DisableGameobjectTrigger : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			Debug.Log("LEFT TRIGGER");
 			disabledGameobject.GetComponent<DisableGameobject>().EnableObject();
 		}
 	}

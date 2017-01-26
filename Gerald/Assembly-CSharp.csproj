@@ -68,6 +68,8 @@
      <Compile Include="Assets\Scripts\Weapons\AmmoController.cs" />
      <Compile Include="Assets\Scripts\Weapons\AssaultRifleController.cs" />
      <Compile Include="Assets\Scripts\Weapons\BulletController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\PlasmaController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\PlasmaGunController.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponSwapController.cs" />
      <Compile Include="Assets\Scripts\Weapons\explosionController.cs" />
  <Reference Include="UnityEngine.UI">

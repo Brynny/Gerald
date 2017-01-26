@@ -45,6 +45,13 @@ public class rangedMovementController : MonoBehaviour
 			rangedHealth = rangedHealth - 2f;
 			Instantiate (Blood, transform.position, transform.rotation);
 		}
+
+		if(other.gameObject.tag == "Plasma")
+		{
+			Destroy (other.gameObject);
+			rangedHealth = rangedHealth - 4f;
+			Instantiate (Blood, transform.position, transform.rotation);
+		}
 	}
 
 	void RangedDeath()

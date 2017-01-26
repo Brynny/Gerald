@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour 
 {
+	public GameObject GameController;
+
 	public GameObject AssaultRifle;
 	public GameObject weaponSlot;
 	public GameObject PlasmaGunPickUpTextGO;
@@ -56,7 +58,7 @@ public class playerController : MonoBehaviour
 		//Pick Up Ammo Pack when walked over
 		if (other.gameObject.tag == "BulletPack")
 		{
-			AssaultRifle.GetComponent<AmmoController>().BulletPackPickup();
+			GameController.GetComponent<AmmoController>().BulletPackPickup();
 			Destroy (other.gameObject);
 		}
 
@@ -88,6 +90,10 @@ public class playerController : MonoBehaviour
 
 		if (currentPlayerHealth >= maxPlayerHealth)
 			currentPlayerHealth = maxPlayerHealth;
+
+		if (currentPlayerHealth <= 0)
+			Destroy(this.gameObject);
+
 	}
 
 	//Display Health on bar

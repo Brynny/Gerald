@@ -32,6 +32,13 @@ public class WolfController : MonoBehaviour
 			wolfHealth = wolfHealth - 2f;
 			Instantiate (wolfBlood, transform.position, transform.rotation);
 		}
+
+		if(other.gameObject.tag == "Plasma")
+		{
+			Destroy (other.gameObject);
+			wolfHealth = wolfHealth - 4f;
+			Instantiate (wolfBlood, transform.position, transform.rotation);
+		}
 	}
 
 	void WolfDeath()

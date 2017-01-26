@@ -26,7 +26,7 @@ public class AssaultRifleController : MonoBehaviour
 		if (Input.GetMouseButton (0) && timer <= 0 && AmmoController.GetComponent<AmmoController>().ARCurrentAmmo > 0)
 		{
 			Instantiate (explosion, AssaultRifleGun.position, AssaultRifleGun.rotation);
-			bulletInstance = Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation) as Rigidbody;
+			Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation);
 			AmmoController.GetComponent<AmmoController>().ARAmmoDecrease();
 			timer = 0.25f;
 		}
