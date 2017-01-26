@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AIMovementController : MonoBehaviour
+public class WolfMovementController : MonoBehaviour
 {
 	public Transform target;
 	public GameObject Wolf;

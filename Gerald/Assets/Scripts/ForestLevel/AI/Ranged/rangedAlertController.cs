@@ -4,7 +4,6 @@ using System.Collections;
 public class rangedAlertController : MonoBehaviour 
 {
 	public GameObject rangedAI;
-	bool canMove = true;
 
 	void OnTriggerEnter(Collider other)
 	{

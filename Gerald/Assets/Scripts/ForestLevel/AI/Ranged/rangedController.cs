@@ -3,8 +3,8 @@ using System.Collections;
 
 public class rangedController : MonoBehaviour
 {
-	public Rigidbody bulletPrefab;
-	Rigidbody bulletInstance;
+	public Rigidbody venomPrefab;
+	Rigidbody venomInstance;
 	public Transform weapon;
 
 	public GameObject agroRange;
@@ -19,8 +19,8 @@ public class rangedController : MonoBehaviour
 
 		if (timer <= 0f)
 		{
-			bulletInstance = Instantiate (bulletPrefab, weapon.position, weapon.rotation) as Rigidbody;
-			timer = 0.5f;
+			venomInstance = Instantiate (venomPrefab, weapon.position, weapon.rotation) as Rigidbody;
+			timer = 1f;
 		}
 	}
 }

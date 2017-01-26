@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AIAlertController : MonoBehaviour
+public class WolfAlertController : MonoBehaviour
 {
 	public GameObject Ai;
 
@@ -9,7 +9,7 @@ public class AIAlertController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			Ai.GetComponent<AIMovementController>().MoveToPlayer();
+			Ai.GetComponent<WolfMovementController>().MoveToPlayer();
 		}
 	}
 
@@ -17,7 +17,7 @@ public class AIAlertController : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			Ai.GetComponent<AIMovementController>().StopMovement();
+			Ai.GetComponent<WolfMovementController>().StopMovement();
 		}
 	}
 }

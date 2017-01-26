@@ -5,7 +5,6 @@ public class stopMovementTrigger : MonoBehaviour
 {
 
 	public GameObject rangedAI;
-	bool canMove = true;
 
 	void OnTriggerEnter(Collider other)
 	{

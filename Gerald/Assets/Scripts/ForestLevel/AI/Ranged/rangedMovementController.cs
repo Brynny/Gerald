@@ -60,7 +60,7 @@ public class rangedMovementController : MonoBehaviour
 		}
 	}
 
-	public void LootAtPlayer()
+	public void LookAtPlayer()
 	{
 		if (target != null)
 		{

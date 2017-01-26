@@ -4,7 +4,7 @@ using System.Collections;
 public class SnakeVenomController : MonoBehaviour 
 {
 	public float moveSpeed;
-	public Rigidbody venom;
+	Rigidbody venom;
 	float timer = 3f;
 
 
@@ -16,6 +16,7 @@ public class SnakeVenomController : MonoBehaviour
 	void FixedUpdate()
 	{
 		VenomMovement();
+
 		timer -= Time.deltaTime;
 		if (timer <= 0) 
 		{
@@ -27,10 +28,4 @@ public class SnakeVenomController : MonoBehaviour
 	{
 		venom.velocity = transform.forward * moveSpeed;
 	}
-
-	void OnTriggerEnter(Collider other)
-	{
-		Destroy(this.gameObject);
-	}
-
 }

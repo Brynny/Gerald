@@ -52,11 +52,11 @@
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedMovementController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\shootDistanceController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\stopMovementTrigger.cs" />
-     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\AIAlertController.cs" />
-     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\AIMovementController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\BossWolfController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfAlertController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfBloodController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfController.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfMovementController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobject.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobjectTrigger.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\EncounterText.cs" />

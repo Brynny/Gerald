@@ -50,6 +50,7 @@ public class playerController : MonoBehaviour
 		if (other.gameObject.tag == "SnakeVenom")
 		{
 			currentPlayerHealth = currentPlayerHealth - 15f;
+			Destroy (other.gameObject);
 		}
 
 		//Pick Up Ammo Pack when walked over

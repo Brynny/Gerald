@@ -20,16 +20,8 @@ public class shootDistanceController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			RangedAI.GetComponent<rangedMovementController>().LootAtPlayer();
+			RangedAI.GetComponent<rangedMovementController>().LookAtPlayer();
 			weapon.GetComponent<rangedController>().Shoot();
-		}
-	}
-
-	void OnTriggerExit(Collider other)
-	{
-		if(other.gameObject.tag == "Player")
-		{
-
 		}
 	}
 }
