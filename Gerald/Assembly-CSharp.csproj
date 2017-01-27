@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\ForestLevel\UI\EncounterText.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\GameController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\SelfDestructUIText.cs" />
+     <Compile Include="Assets\Scripts\MiniMapCameraController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Player\updatedMovementController.cs" />
