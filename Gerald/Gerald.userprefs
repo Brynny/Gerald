@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEventTrigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\CameraController.cs" Line="6" Column="1" />
-      <File FileName="Assets\Scripts\MiniMapCameraController.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEventTrigger.cs" Line="11" Column="4" />
+      <File FileName="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEventTreesActivation.cs" Line="19" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

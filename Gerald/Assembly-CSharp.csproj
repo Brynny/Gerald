@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfMovementController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobject.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobjectTrigger.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEventTreesActivation.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEventTrigger.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\EncounterText.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\GameController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\UI\SelfDestructUIText.cs" />
