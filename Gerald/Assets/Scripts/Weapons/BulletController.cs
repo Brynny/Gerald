@@ -35,4 +35,9 @@ public class BulletController : MonoBehaviour
 		//Give bullet movement to move in a forward direction.
 		bullet.velocity = transform.forward * moveSpeed;
 	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		Destroy(this.gameObject);
+	}
 }
