@@ -1,10 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\FirstEventTrigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveExitTrigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\Weapons\BulletController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\RockController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\FirstEventTrigger.cs" Line="7" Column="34" />
+      <File FileName="Assets\Scripts\ForestLevel\Buildings\DisableGameobject.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveTopController.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveEnterTrigger.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveExitTrigger.cs" Line="13" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

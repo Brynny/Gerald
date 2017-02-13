@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DisableGameobject : MonoBehaviour 
+public class RockCaveTopController : MonoBehaviour 
 {
 
 	public void DisableObject()

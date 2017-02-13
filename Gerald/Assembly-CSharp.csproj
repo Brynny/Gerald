@@ -59,6 +59,9 @@
      <Compile Include="Assets\Scripts\ForestLevel\AI\Wolf\WolfMovementController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobject.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\Buildings\DisableGameobjectTrigger.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveEnterTrigger.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveExitTrigger.cs" />
+     <Compile Include="Assets\Scripts\ForestLevel\Buildings\RockCave\RockCaveTopController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\FirstEventTreesActivation.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\FirstEventTrigger.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\PuzzlesEvents\FirstEvent\RockController.cs" />
