@@ -46,7 +46,7 @@ public class updatedMovementController : MonoBehaviour
 			Vector3 pointToLook = cameraRay.GetPoint(rayLength);
 			Debug.DrawLine(cameraRay.origin, pointToLook, Color.blue);
 
-			transform.LookAt(pointToLook);
+			transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
 		}
 	}
 		
