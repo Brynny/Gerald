@@ -6,12 +6,12 @@ public class WolfMovementController : MonoBehaviour
 	public Transform target;
 	public GameObject Wolf;
 
-	private NavMeshAgent agent;
+	private UnityEngine.AI.NavMeshAgent agent;
 
 
 	void Start () 
 	{
-		agent = gameObject.GetComponent<NavMeshAgent>();
+		agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 	}
 	
 

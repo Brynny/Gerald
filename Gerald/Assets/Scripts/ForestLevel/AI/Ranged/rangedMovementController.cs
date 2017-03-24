@@ -10,7 +10,7 @@ public class rangedMovementController : MonoBehaviour
 
 	public Transform target;
 
-	private NavMeshAgent agent;
+	private UnityEngine.AI.NavMeshAgent agent;
 
 	float dropRate = 0.5f;
 	public GameObject[] Loot;
@@ -18,7 +18,7 @@ public class rangedMovementController : MonoBehaviour
 
 	void Start () 
 	{
-		agent = gameObject.GetComponent<NavMeshAgent>();
+		agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
 	}
 
 
@@ -62,7 +62,7 @@ public class rangedMovementController : MonoBehaviour
 			{
 				Instantiate (Loot[Random.Range(0, 2)], transform.position, Quaternion.identity);
 			}
-			gameController.GetComponent<GameController>().EnemyCount();
+            GameController.EnemyCount();
 			Destroy (this.gameObject);
 		}
 	}

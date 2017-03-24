@@ -2,10 +2,20 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour 
+public class GameController : MonoBehaviour
 {
-	public Text enemiesRemainingText;
-	public float enemiesKilled = 0f;
+    public static GameController GM;
+
+	public Text enemyCounterText;
+	static float enemiesKilled = 0f;
+
+    static float _playerExp = 0f;
+
+    void Awake()
+    {
+        GM = this;
+        DontDestroyOnLoad(this);
+    }
 		
 
 	void FixedUpdate ()
@@ -15,11 +25,16 @@ public class GameController : MonoBehaviour
 
 	void UIDisplay()
 	{
-		enemiesRemainingText.text = "Enemy Counter: " + enemiesKilled;
+		enemyCounterText.text = "Enemy Counter: " + enemiesKilled;
 	}
 
-	public void EnemyCount()
+	static public void EnemyCount()
 	{
 		enemiesKilled += 1f;
 	}
+
+    static public void wolfExp()
+    {
+        _playerExp = _playerExp + 25f;
+    }
 }

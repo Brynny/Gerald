@@ -6,9 +6,11 @@ public class WolfController : MonoBehaviour
 	//Wolf Health
 	public float wolfHealth = 10f;
 
-
 	public GameObject wolfBlood;
 	public GameObject gameController;
+
+
+
 
 	//Spawn Ammo
 	public GameObject[] Loot;
@@ -49,7 +51,8 @@ public class WolfController : MonoBehaviour
 			{
 				Instantiate (Loot[Random.Range(0, 2)], transform.position, Quaternion.identity);
 			}
-			gameController.GetComponent<GameController>().EnemyCount();
+            GameController.EnemyCount();
+            GameController.wolfExp();
 			Destroy (this.gameObject);
 		}
 	}
