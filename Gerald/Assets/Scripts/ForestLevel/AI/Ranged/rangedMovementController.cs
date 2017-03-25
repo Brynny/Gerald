@@ -63,6 +63,7 @@ public class rangedMovementController : MonoBehaviour
 				Instantiate (Loot[Random.Range(0, 2)], transform.position, Quaternion.identity);
 			}
             GameController.EnemyCount();
+            GameController.SnakeExp();
 			Destroy (this.gameObject);
 		}
 	}

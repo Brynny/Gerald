@@ -52,7 +52,7 @@ public class WolfController : MonoBehaviour
 				Instantiate (Loot[Random.Range(0, 2)], transform.position, Quaternion.identity);
 			}
             GameController.EnemyCount();
-            GameController.wolfExp();
+            GameController.WolfExp();
 			Destroy (this.gameObject);
 		}
 	}

@@ -9,7 +9,10 @@ public class GameController : MonoBehaviour
 	public Text enemyCounterText;
 	static float enemiesKilled = 0f;
 
-    static float _playerExp = 0f;
+    public Text playerLevelText;
+    public static float _currentExp = 0f;
+    static float _maxExp = 100f;
+    static float _currentLevel = 1f;
 
     void Awake()
     {
@@ -21,11 +24,13 @@ public class GameController : MonoBehaviour
 	void FixedUpdate ()
 	{
 		UIDisplay();
+        PlayerExpTracker();
 	}
 
 	void UIDisplay()
 	{
 		enemyCounterText.text = "Enemy Counter: " + enemiesKilled;
+        playerLevelText.text = "" + _currentLevel;
 	}
 
 	static public void EnemyCount()
@@ -33,8 +38,25 @@ public class GameController : MonoBehaviour
 		enemiesKilled += 1f;
 	}
 
-    static public void wolfExp()
+    static public void PlayerExpTracker()
     {
-        _playerExp = _playerExp + 25f;
+        if (_currentExp >= _maxExp)
+        {
+            _currentLevel = _currentLevel + 1f;
+            _currentExp = 0f;
+            _maxExp = _maxExp * 1.2f;
+        }
+
     }
+
+    static public void WolfExp()
+    {
+        _currentExp = _currentExp + 25f;
+    }
+
+    static public void SnakeExp()
+    {
+        _currentExp = _currentExp + 35f;
+    }
+
 }
