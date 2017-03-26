@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MainMenu\Scripts\ButtonTransparancy.cs" />
+     <Compile Include="Assets\MainMenu\Scripts\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\SnakeVenomController.cs" />
      <Compile Include="Assets\Scripts\ForestLevel\AI\Ranged\rangedAlertController.cs" />

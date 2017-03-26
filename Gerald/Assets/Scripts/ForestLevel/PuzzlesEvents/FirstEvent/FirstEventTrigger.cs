@@ -8,11 +8,6 @@ public class FirstEventTrigger : MonoBehaviour
 	public float timer = 5f;
 	bool startTimer = false;
 
-	void Start()
-	{
-
-	}
-
 	void FixedUpdate()
 	{
 		if (startTimer == true)
