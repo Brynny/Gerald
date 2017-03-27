@@ -10,6 +10,9 @@ public class playerController : MonoBehaviour
 	public GameObject weaponSlot;
 	public GameObject PlasmaGunPickUpTextGO;
 
+	public GameObject playerFlashLight;
+	public bool playerFlashLightEnabled = true;
+
 	public float currentPlayerHealth = 0f;
 	public float maxPlayerHealth = 100f;
 
@@ -30,7 +33,8 @@ public class playerController : MonoBehaviour
 
 	void FixedUpdate () 
 	{		
-		PlayerHP();
+		PlayerHP ();
+		SetPlayerFlashLight ();
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -101,6 +105,22 @@ public class playerController : MonoBehaviour
 	public void SetHealthBar (float myHealth)
 	{
 		healthBar.fillAmount = myHealth;
+	}
+
+	public void SetPlayerFlashLight()
+	{
+		if (Input.GetKeyDown (KeyCode.F) && playerFlashLightEnabled == false)
+		{
+			playerFlashLight.SetActive (true);
+			playerFlashLightEnabled = true;
+		}
+			
+		else if (Input.GetKeyDown (KeyCode.F) && playerFlashLightEnabled == true) 
+		{
+			playerFlashLight.SetActive(false);
+			playerFlashLightEnabled = false;
+		}
+
 	}
 
 }
