@@ -63,9 +63,12 @@
      <Compile Include="Assets\Levels\Forest\Scripts\Buildings\RockCave\RockCaveExitTrigger.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\Buildings\RockCave\RockCaveTopController.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\Bomb.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\BombPlacement.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\FirstEventTrigger.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\RockController.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\UI\EncounterText.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\UI\NarrationController.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\UI\ScreenShake.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\UI\SelfDestructUIText.cs" />
      <Compile Include="Assets\MainMenu\Scripts\ButtonTransparancy.cs" />
      <Compile Include="Assets\MainMenu\Scripts\MainMenuController.cs" />
