@@ -9,10 +9,16 @@ public class GameController : MonoBehaviour
 	public Text enemyCounterText;
 	static float enemiesKilled = 0f;
 
+	//Player Experience
     public Text playerLevelText;
     public static float _currentExp = 0f;
     static float _maxExp = 100f;
-    static float _currentLevel = 1f;
+	public static float _currentLevel = 1f;
+
+	//Player Variables
+	public static float _playerMoveSpeed = 10f;
+//	public static float _playerCurHealth;
+//	public static float _playerMaxHealth = 100f;
 
     void Awake()
     {

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Levels/Forest/Forest.unity
+- path: Assets/MainMenu/PlayerHub/PlayerHub.unity
   isLoaded: 1
   isActive: 1

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class AssaultRifleController : MonoBehaviour 
 {
-	public GameObject AmmoController;
+	//public GameObject AmmoController;
 
 	public GameObject explosion;
 
@@ -16,19 +16,23 @@ public class AssaultRifleController : MonoBehaviour
 	void FixedUpdate () 
 	{
 		Shoot();
-		AmmoController.GetComponent<AmmoController>().ARAmmoController();
+		AmmoController.ARAmmoController ();
+		//AmmoController.GetComponent<AmmoController>().ARAmmoController();
 	}
 
 	void Shoot ()
 	{
 		timer = timer - Time.deltaTime;
 
-		if (Input.GetMouseButton (0) && timer <= 0 && AmmoController.GetComponent<AmmoController>().ARCurrentAmmo > 0)
+		if (Input.GetMouseButton (0) && timer <= 0 && AmmoController._ARCurrentAmmo > 0)
 		{
+			Debug.Log ("Shooting");
 			Instantiate (explosion, AssaultRifleGun.position, AssaultRifleGun.rotation);
 			Instantiate (bulletPrefab, AssaultRifleGun.position, AssaultRifleGun.rotation);
-			AmmoController.GetComponent<AmmoController>().ARAmmoDecrease();
+			AmmoController.ARAmmoDecrease ();
 			timer = 0.25f;
 		}
 	}
 }
+
+//&& AmmoController.GetComponent<AmmoController>().ARCurrentAmmo > 0

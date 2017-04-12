@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class updatedMovementController : MonoBehaviour 
 {
-	public float moveSpeed;
+	//public float moveSpeed;
 	private Rigidbody myRB;
 
 	private Vector3 moveInput;
@@ -33,7 +33,7 @@ public class updatedMovementController : MonoBehaviour
 	void Movement()
 	{
 		moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
-		moveVelocity = moveInput * moveSpeed;
+		moveVelocity = moveInput * GameController._playerMoveSpeed;
 
 		myRB.velocity = moveVelocity;
 

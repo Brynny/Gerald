@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
 	public void NewGame()
 	{
-		SceneManager.LoadScene ("Forest");
+		SceneManager.LoadScene ("PlayerHub");
 	}
 
 	public void QuitGame () 

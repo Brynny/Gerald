@@ -4,36 +4,51 @@ using UnityEngine.UI;
 
 public class AmmoController : MonoBehaviour
 {
-	public float ARMaxAmmo;
-	public float ARCurrentAmmo;
+	public static AmmoController AC;
+
+	public static float _ARMaxAmmo = 200f;
+	public static float _ARCurrentAmmo;
 	public Text AmmoText;
 
 	public float PGMaxAmmo;
 	public float PGCurrentAmmo;
 
-	public GameObject WeaponSwapControllerGO;
+	//public GameObject WeaponSwapControllerGO;
 
-	public void ARAmmoDecrease()
+	void Awake()
 	{
-		ARCurrentAmmo = ARCurrentAmmo - 1f;
+		AC = this;
+	}
+
+	void Start ()
+	{
+		_ARCurrentAmmo = _ARMaxAmmo;
+	}
+
+	void FixedUpdate()
+	{
+		//Display Ammo Text On UI
+		AmmoText.text = "Assault Rifle Ammo: " + _ARCurrentAmmo + " / " + _ARMaxAmmo;
+	}
+
+	public static void ARAmmoDecrease()
+	{
+		_ARCurrentAmmo = _ARCurrentAmmo - 1f;
 	}
 
 	public void BulletPackPickup()
 	{
-		ARCurrentAmmo += 20f;
+		_ARCurrentAmmo += 20f;
 	}
 
-	public void ARAmmoController()
+	public static void ARAmmoController()
 	{
-		//Display Ammo Text On UI
-		AmmoText.text = "Assault Rifle Ammo: " + ARCurrentAmmo + " / " + ARMaxAmmo;
-
 		//If Ammo is more than 200, limit it to 200.
-		if (ARCurrentAmmo >= 200f)
-			ARCurrentAmmo = 200f;
+		if (_ARCurrentAmmo >= 200f)
+			_ARCurrentAmmo = 200f;
 
-		if (ARCurrentAmmo <= 0f)
-			ARCurrentAmmo = 0;
+		if (_ARCurrentAmmo <= 0f)
+			_ARCurrentAmmo = 0;
 	}
 
 	public void PGAmmoController()
