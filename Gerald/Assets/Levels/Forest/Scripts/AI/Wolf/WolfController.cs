@@ -31,14 +31,14 @@ public class WolfController : MonoBehaviour
 		if(other.gameObject.tag == "Bullet")
 		{
 			Destroy (other.gameObject);
-			wolfHealth = wolfHealth - 2f;
+			wolfHealth = wolfHealth - PlayerDamageVariables._ARDamage;
 			Instantiate (wolfBlood, transform.position, transform.rotation);
 		}
 
 		if(other.gameObject.tag == "Plasma")
 		{
 			Destroy (other.gameObject);
-			wolfHealth = wolfHealth - 4f;
+			wolfHealth = wolfHealth - PlayerDamageVariables._PlasmaGunDamage;
 			Instantiate (wolfBlood, transform.position, transform.rotation);
 		}
 	}

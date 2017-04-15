@@ -42,14 +42,14 @@ public class rangedMovementController : MonoBehaviour
 		if(other.gameObject.tag == "Bullet")
 		{
 			Destroy (other.gameObject);
-			rangedHealth = rangedHealth - 2f;
+			rangedHealth = rangedHealth - PlayerDamageVariables._ARDamage;
 			Instantiate (Blood, transform.position, transform.rotation);
 		}
 
 		if(other.gameObject.tag == "Plasma")
 		{
 			Destroy (other.gameObject);
-			rangedHealth = rangedHealth - 4f;
+			rangedHealth = rangedHealth - PlayerDamageVariables._PlasmaGunDamage;
 			Instantiate (Blood, transform.position, transform.rotation);
 		}
 	}
