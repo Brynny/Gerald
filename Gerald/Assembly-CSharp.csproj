@@ -66,6 +66,10 @@
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\BombPlacement.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\FirstEventTrigger.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\FirstEvent\RockController.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\SecondEvent\BlueCube.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\SecondEvent\RedCube.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\SecondEvent\SecondEventController.cs" />
+     <Compile Include="Assets\Levels\Forest\Scripts\PuzzlesEvents\SecondEvent\YellowCube.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\UI\EncounterText.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\UI\NarrationController.cs" />
      <Compile Include="Assets\Levels\Forest\Scripts\UI\ScreenShake.cs" />
