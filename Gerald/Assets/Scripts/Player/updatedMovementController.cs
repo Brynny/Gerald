@@ -37,7 +37,7 @@ public class updatedMovementController : MonoBehaviour
 
 		myRB.velocity = moveVelocity;
 
-		Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+		Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 		Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
 		float rayLength;
 

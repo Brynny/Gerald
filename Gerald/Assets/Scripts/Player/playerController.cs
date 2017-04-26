@@ -77,7 +77,7 @@ public class playerController : MonoBehaviour
 		{
 			weaponSlot.GetComponent<WeaponSwapController>().PlasmaGunPickedUp();
 			Destroy (other.gameObject);
-			plasmaGunPickedUpText.text = "PlasmaGun Equipped";
+			plasmaGunPickedUpText.text = "Plasma Gun Equipped";
 			PlasmaGunPickUpTextGO.GetComponent<SelfDestructUIText>().SelfDestruct();
 
 		}
