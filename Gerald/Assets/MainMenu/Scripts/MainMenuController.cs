@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour 
 {
+	//Main Menu
 	public void NewGame()
 	{
 		SceneManager.LoadScene ("PlayerHub");
@@ -13,5 +14,11 @@ public class MainMenuController : MonoBehaviour
 	public void QuitGame () 
 	{
 		Application.Quit ();
+	}
+
+	//In Game Menu
+	public void MainMenu()
+	{
+		SceneManager.LoadScene ("MainMenu");
 	}
 }

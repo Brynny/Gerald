@@ -20,12 +20,21 @@ public class GameController : MonoBehaviour
 //	public static float _playerCurHealth;
 //	public static float _playerMaxHealth = 100f;
 
+	//In Game Menu 
+	public GameObject InGameMenu;
+	bool isPaused = false;
+
     void Awake()
     {
         GM = this;
         DontDestroyOnLoad(this);
+		Time.timeScale = 1.0f;
     }
 		
+	void Update()
+	{
+		TriggerInGameMenu ();
+	}
 
 	void FixedUpdate ()
 	{
@@ -65,4 +74,20 @@ public class GameController : MonoBehaviour
         _currentExp = _currentExp + 35f;
     }
 
+	void TriggerInGameMenu()
+	{
+		if (Input.GetKeyDown (KeyCode.Escape) && isPaused == false) 
+		{
+			InGameMenu.SetActive(true);
+			Time.timeScale = 0.0f;
+			isPaused = true;
+		}
+
+		else if (Input.GetKeyDown (KeyCode.Escape) && isPaused == true) 
+		{
+			InGameMenu.SetActive(false);
+			Time.timeScale = 1.0f;
+			isPaused = false;
+		}
+	}
 }
