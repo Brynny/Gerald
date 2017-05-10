@@ -24,6 +24,9 @@ public class GameController : MonoBehaviour
 	public GameObject InGameMenu;
 	bool isPaused = false;
 
+	//PlayerPrefs
+	int levelToLoad;
+
     void Awake()
     {
         GM = this;
@@ -89,5 +92,15 @@ public class GameController : MonoBehaviour
 			Time.timeScale = 1.0f;
 			isPaused = false;
 		}
+	}
+
+	void SaveLevel()
+	{
+		
+	}
+
+	public void LoadLevel()
+	{
+		
 	}
 }

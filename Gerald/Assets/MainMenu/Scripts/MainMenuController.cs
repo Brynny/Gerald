@@ -16,6 +16,11 @@ public class MainMenuController : MonoBehaviour
 		Application.Quit ();
 	}
 
+	public void Continue()
+	{
+
+	}
+
 	//In Game Menu
 	public void MainMenu()
 	{

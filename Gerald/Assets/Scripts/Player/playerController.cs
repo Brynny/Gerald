@@ -25,6 +25,7 @@ public class playerController : MonoBehaviour
 
 	public Text plasmaGunPickedUpText;
 
+
 	void Start () 
 	{
 		currentPlayerHealth = maxPlayerHealth;
@@ -35,6 +36,11 @@ public class playerController : MonoBehaviour
 	{		
 		PlayerHP ();
 		SetPlayerFlashLight ();
+	}
+
+	void Update()
+	{
+
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -122,5 +128,4 @@ public class playerController : MonoBehaviour
 		}
 
 	}
-
 }
